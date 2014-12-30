@@ -87,9 +87,8 @@ describe PeopleController do
            post :create, {:person => {first_name: "invalid value"}}, valid_session
            response.should render_template("new")
          end
-      end
-    end
-  end
+       end
+     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved person as @person" do
